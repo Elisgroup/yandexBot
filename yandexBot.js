@@ -24,6 +24,7 @@ else {
     for (i=0; i<links.length; i++){
         let link = links[i];
         if (link.href.indexOf("renins") != -1){
+            link.target = "_self";
             setTimeout(function(){
                 link.click();
             }, 2000);
